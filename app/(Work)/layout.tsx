@@ -11,7 +11,7 @@ import {
   WalletModalProvider,
 } from "@solana/wallet-adapter-react-ui";
 import { clusterApiUrl } from "@solana/web3.js";
-import { Appbar } from "@/components/AppBar";
+import { Appbar } from "@/app/(Work)/waste/AppBar";
 require("@solana/wallet-adapter-react-ui/styles.css");
 
 const SidebarContext = createContext({

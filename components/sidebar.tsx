@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import React, { useState } from 'react';
 import { SidebarItem } from "./sidebar-items";
 import { useSidebar } from "@/app/(Work)/layout";
-import { ModeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
+import { ModeToggle } from "./theme-toggle";
 
 type Props = {
   className?: string;

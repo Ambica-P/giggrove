@@ -1,9 +1,6 @@
 "use client"
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import HoverBorderGradient from "@/components/ui/Buttons";
-import { Plus } from "lucide-react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+
 import { PopoverDemo } from "../popover/page";
 
 export function AuroraBackgroundDemo() {

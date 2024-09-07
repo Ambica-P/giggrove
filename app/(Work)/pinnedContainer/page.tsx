@@ -36,7 +36,6 @@ const PinnedContainer: React.FC<PinnedContainerProps> = ({ text, VideoElement, c
             {/* Text section on the left */}
             <div className="text-section flex items-center flex-1 pr-8">
               <div className="content space-y-4">
-                <h1 className="text-3xl font-bold mb-4">Pinned Container</h1>
                 <p>{text}</p>
               </div>
             </div>

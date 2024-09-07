@@ -1,4 +1,4 @@
-import { Appbar } from "@/components/AppBar"
+import { Appbar } from "@/app/(Work)/waste/AppBar"
 import { Appbar1 } from "@/components/AppBar1"
 import { Button } from "@/components/ui/button"
 

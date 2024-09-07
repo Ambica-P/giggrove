@@ -68,7 +68,7 @@ const OnboardingDone = () => {
 
         <div className="flex mt-1">
           <Button className="flex-1 p-2 border border-gray-300 shadow-sm mr-2 bg-logoBlue hover:bg-blue-400">
-            < Link href='client'>
+            < Link href='Dashboard'>
               Find Talent
             </Link>
           </Button>
