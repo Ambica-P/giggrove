@@ -1,4 +1,5 @@
 "use client"
+import { SidebarDemo } from '@/components/sidebar2';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -31,8 +32,11 @@ const InviteTeamMembers: React.FC = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto mt-12 p-6 ">
-
+<div className="flex h-screen">
+        {/* Sidebar */}
+        <SidebarDemo />
+  
+        <div className=" mt-12 p-6 font-sans text-gray-800">
         <h2 className="text-2xl font-semibold mb-6">Invite Your Team</h2>
 
         {teamMembers.map((member, index) => (
@@ -57,9 +61,9 @@ const InviteTeamMembers: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => removeTeamMember(index)}
-                  className="ml-2 bg-gray-400 text-white p-2 rounded-md hover:bg-red-400"
+                  className="ml-5 px-3 py-2 bg-gray-400 text-white p-2 rounded-md hover:bg-red-400"
                 >
-                  Remove
+                  X
                 </button>
               )}
             </div>
@@ -74,10 +78,10 @@ const InviteTeamMembers: React.FC = () => {
           + Add more team members
         </button>
 
-        <div className="flex justify-between">
+        <div className="flex ">
           <button
             type="button"
-            className="bg-gray-200 text-black px-4 py-2 rounded-md hover:bg-gray-300"
+            className="bg-gray-200 text-black px-4 py-2  rounded-md hover:bg-gray-300"
           >
             <Link 
             href="OnboardingDone">
@@ -86,11 +90,12 @@ const InviteTeamMembers: React.FC = () => {
           </button>
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700"
+            className=" text-white px-3 py-2 rounded-md ml-14  bg-logoBlue hover:bg-blue-400"
           >
             Next up: Start recruiting
           </button>
         </div>
+    </div>
     </div>
   );
 };

@@ -48,7 +48,7 @@ export default function SignupForm() {
             </p>
 
             <div className="p-5">
-              <Button className="flex items-center justify-center gap-2">
+              <Button className="flex items-center text-black bg-white justify-center gap-2">
                 <img
                   src="/google.png"
                   alt="Google"

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import Link from 'next/link';
+import { SidebarDemo } from '@/components/sidebar2';
 
 const OnboardingForm: React.FC = () => {
     
@@ -24,7 +25,11 @@ const OnboardingForm: React.FC = () => {
     };
 
     return (
-        <div className="max-w-lg mx-auto mt-12 p-6 font-sans text-gray-800">
+        <div className="flex">
+        {/* Sidebar */}
+        <SidebarDemo />
+  
+        <div className=" mt-12 p-6 font-sans text-gray-800">
             <h2 className="text-2xl font-semibold mb-4">Let's find your Company</h2>
             <p className="text-sm mb-6 text-gray-600">Nearly 5 million startups already have a Wellfound profile. We'll look for yours, and if you use an applicant tracking system, we'll help find the jobs you've already posted.</p>
             
@@ -63,12 +68,13 @@ const OnboardingForm: React.FC = () => {
                 ))}
             </div>
             
-            <button className="w-full py-2 bg-black text-white rounded-md hover:bg-gray-800" >
+            <button className="w-[75%] py-2  text-white rounded-md ml-12 bg-logoBlue hover:bg-blue-400" >
                 <Link
                     href="createaccClient">
                     Next
                 </Link>
             </button>
+        </div>
         </div>
     );
 };
